@@ -1,0 +1,43 @@
+{
+  "name": "Ultimate Mute Tab",
+  "short_name": "Ultimate Mute Tab",
+  "description": "Mute and unmute tabs easily with hotkeys",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "commands": {
+    "mute_all": {
+      "description": "Mute all tabs",
+      "suggested_key": {
+        "default": "Alt+Shift+Comma"
+      }
+    },
+    "unmute_all": {
+      "description": "Unmute all tabs",
+      "suggested_key": {
+        "default": "Alt+Shift+Period"
+      }
+    },
+    "mute_others": {
+      "description": "Mute all tabs except the currently open tab",
+      "suggested_key": {
+        "default": "Alt+Shift+N"
+      }
+    },
+    "mute_current": {
+      "description": "Mute the selected tab",
+      "suggested_key": {
+        "default": "Alt+Shift+M"
+      }
+    }
+  },
+  "icons": {
+    "16": "images/16.png",
+    "128": "images/128.png"
+  }
+}
